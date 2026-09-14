@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Leilany Navarro | Web Developer</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+	<!-- Simple navigation links to the main parts of the page -->
+	<header class="site-header">
+		<a class="logo" href="#top">L.N<span>.</span></a>
+		<nav>
+			<a href="#about">About</a>
+			<a href="#skills">Skills</a>
+			<a href="#contact">Contact</a>
+		</nav>
+	</header>
+
+	<main id="top">
+		<!-- The hero uses the background image from the img folder -->
+		<section class="hero">
+			<div class="hero-text">
+				<p class="eyebrow">Web development student</p>
+				<h1>Ideas made<br><em>visible.</em></h1>
+				<p class="hero-intro">I am learning to build thoughtful websites that are useful, welcoming, and creative.</p>
+				<a class="button" href="#about">Explore my work <span>↓</span></a>
+			</div>
+			<p class="hero-note">01 / Portfolio in progress</p>
+		</section>
+
+		<!-- About section with the profile image above the introduction -->
+		<section class="about section-width" id="about">
+			<div class="section-label">01 — About me</div>
+			<div class="about-content">
+				<div class="profile-wrap">
+					<img class="profile-photo" src="img/Screenshot_11-9-2026_224132_discord.com.jpeg" alt="Portrait of Your Name">
+					<span class="profile-caption">Nice to meet you!</span>
+				</div>
+				<div class="about-copy">
+					<h2>Curious by<br><em>nature.</em></h2>
+					<p>Hi, I’m <strong>Leilany Navarro</strong>. I’m a web development student who enjoys turning simple ideas into clear and memorable digital experiences. I aspire to be a video game designer, but before that I must take the basics of art and coding.</p>
+					<p>This portfolio will grow as I learn HTML, CSS, and JavaScript. Every project is a chance to practice, experiment, and make something better than the last.</p>
+					<a class="text-link" href="#skills">See what I’m learning <span>→</span></a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Skills are easy to edit: add or remove a skill-item as you learn -->
+		<section class="skills section-width" id="skills">
+			<div class="section-label">02 — My toolkit</div>
+			<div class="skills-heading">
+				<h2>Things I’m<br><em>learning.</em></h2>
+				<p>These are the tools and ideas I am exploring during my course. More coming soon.</p>
+			</div>
+			<div class="skill-list">
+				<div class="skill-item"><span>01</span><strong>HTML</strong><small>Structure &amp; meaning</small></div>
+				<div class="skill-item"><span>02</span><strong>CSS</strong><small>Style &amp; layout</small></div>
+				<div class="skill-item"><span>03</span><strong>JavaScript</strong><small>Interaction &amp; logic</small></div>
+				<div class="skill-item"><span>04</span><strong>Design</strong><small>Ideas &amp; details</small></div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Contact information sits at the bottom of the page -->
+	<footer class="footer" id="contact">
+		<div class="footer-inner section-width">
+			<div>
+				<p class="section-label">03 — Say hello</p>
+				<h2>Let’s make<br><em>something.</em></h2>
+			</div>
+			<div class="contact-details">
+				<p>I’m always happy to talk about ideas, projects, and the web.</p>
+				<a class="email" href="mailto:LeilanyNavarro@outlook.com">LeilanyNavarro@outlook.com</a>
+				<div class="social-links">
+					<a href="https://github.com/leilany-navarro" target="_blank" rel="noreferrer">GitHub ↗</a>
+					<a href="https://www.linkedin.com/in/leilany-navarro-6775943a8" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+				</div>
+			</div>
+		</div>
+		<p class="copyright">© 2026 Leilany Navarro · Built while learning</p>
+	</footer>
 </body>
 </html>
