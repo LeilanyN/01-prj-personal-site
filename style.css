@@ -1,7 +1,7 @@
 /* Colors and sizes are kept here so they are easy to change later. */
 :root {
 	--ink: #171d23;
-	--paper: #f3f0c9;
+	--paper: hsl(56, 26%, 79%);
 	--cream: #faedcb;
 	--coral: #e152e6;
 	--green: #2e3e68;
@@ -145,6 +145,7 @@ h2 em {
 }
 
 .about-content,
+.artwork-heading,
 .skills-heading,
 .footer-inner {
 	align-items: center;
@@ -201,6 +202,70 @@ h2 {
 	padding-bottom: 6px;
 	text-transform: uppercase;
 	letter-spacing: 0.08em;
+}
+
+.skills-link {
+	display: inline-block;
+	margin: 18px 0 0 52%;
+}
+
+.artwork {
+	padding-bottom: 120px;
+	padding-top: 120px;
+}
+
+.artwork-heading {
+	align-items: flex-end;
+	margin-top: 20px;
+	max-width: 1100px;
+}
+
+.artwork-heading p {
+	max-width: 430px;
+}
+
+.artwork-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	margin-top: 40px;
+}
+
+.artwork-card {
+	background: rgba(255, 255, 255, 0.2);
+	border: 1px solid var(--line);
+	display: block;
+	flex: 1 1 280px;
+	padding: 28px 24px;
+	transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.artwork-card:hover {
+	border-color: var(--coral);
+	transform: translateY(-4px);
+}
+
+.card-number,
+.artwork-card small {
+	color: var(--green);
+	display: block;
+	font-size: 0.72rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.artwork-card strong {
+	display: block;
+	font-family: var(--serif);
+	font-size: 1.8rem;
+	font-weight: normal;
+	margin: 12px 0 8px;
+}
+
+.artwork-card small {
+	color: var(--ink);
+	letter-spacing: 0;
+	text-transform: none;
 }
 
 .skills {
@@ -337,6 +402,7 @@ h2 {
 	}
 
 	.about-content,
+	.artwork-heading,
 	.skills-heading,
 	.footer-inner {
 		align-items: flex-start;
@@ -346,6 +412,15 @@ h2 {
 	.profile-wrap {
 		margin: 30px 0 65px;
 		width: 78%;
+	}
+
+	.artwork {
+		padding-bottom: 80px;
+		padding-top: 80px;
+	}
+
+	.artwork-card {
+		width: 100%;
 	}
 
 	.skill-item {
